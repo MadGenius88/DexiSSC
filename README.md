@@ -3,6 +3,8 @@
 
 # Sawtooth Supply Chain
 
+This duplicate was made on 7/10/18 rm.
+
 This is a distributed application to help you trace the provenance and other
 contextual information of any asset. It can be used as-is or customized for
 different use cases. This distributed application runs on top of Hyperledger
