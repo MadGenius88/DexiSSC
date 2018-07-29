@@ -468,7 +468,7 @@ const AssetDetail = {
           ? m(ReportValue,
             {
               name: 'weight',
-              label: 'Weight (kg)',
+              label: 'Weight (lbs)',
               record,
               typeField: 'numberValue',
               type: payloads.updateProperties.enum.NUMBER,
