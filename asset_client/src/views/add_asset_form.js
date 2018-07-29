@@ -71,7 +71,7 @@ const AddAssetForm = {
           forms.textInput(setter('subtype'), 'Subtype', false)
         ]),
 
-        forms.group('Weight (kg)', forms.field(setter('weight'), {
+        forms.group('Weight (lbs)', forms.field(setter('weight'), {
           type: 'number',
           step: 'any',
           min: 0,
