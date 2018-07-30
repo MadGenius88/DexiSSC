@@ -96,7 +96,7 @@ const AddAssetForm = {
         ]),
 
         m('.reporters.form-group',
-          m('label', 'Authorize Reporters (people who can update the tracking info of an asset)'),
+          m('label', 'Authorize Reporters (People who can update the tracking info of an asset. Use the drop-down to the right to select what they can update.)'),
           vnode.state.reporters.map((reporter, i) =>
             m('.row.mb-2',
               m('.col-sm-8',
