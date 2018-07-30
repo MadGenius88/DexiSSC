@@ -357,7 +357,7 @@ const AuthorizeReporter = {
 
   view (vnode) {
     return [
-      _row(m('strong', 'Authorize Reporter')),
+      _row(m('strong', 'Authorize Reporter (People who can update the tracking info of an asset. Use the drop-down to the right to select what they can update.)')),
       m('.row',
         m('.col-6',
           m('input.form-control', {
