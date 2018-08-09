@@ -84,7 +84,7 @@ const SignupForm = {
 
     return m('.signup-form', [
       m('form', { onsubmit: userSubmitter(vnode.state) },
-      m('legend', 'Create Agent'),
+      m('legend', 'Create User'),
       forms.textInput(setter('name'), 'Name'),
       forms.emailInput(setter('email'), 'Email'),
       forms.textInput(setter('username'), 'Username'),
@@ -98,7 +98,7 @@ const SignupForm = {
         m('.row.justify-content-end.align-items-end',
           m('col-2',
             m('button.btn.btn-primary',
-              'Create Agent')))))
+              'Create User')))))
     ])
   }
 }
