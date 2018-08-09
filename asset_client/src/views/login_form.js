@@ -46,7 +46,7 @@ const LoginForm = {
             })
         }
       },
-      m('legend', 'Login Agent'),
+      m('legend', 'Login User'),
       forms.textInput(setter('username'), 'Username'),
       forms.passwordInput(setter('password'), 'Password'),
       m('.container.text-center',
