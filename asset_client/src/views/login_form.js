@@ -53,7 +53,7 @@ const LoginForm = {
         'Or you can ',
         m('a[href="/signup"]',
           { oncreate: m.route.link },
-          'create a new Agent')),
+          'create a new User')),
       m('.form-group',
         m('.row.justify-content-end.align-items-end',
           m('col-2',
