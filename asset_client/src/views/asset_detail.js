@@ -190,7 +190,7 @@ const ReporterControl = {
         record.proposals.filter((p) => p.role === 'REPORTER' && p.issuingAgent === publicKey).map(
           (p) =>
             m('.mt-2.d-flex.justify-content-start',
-              `Pending proposal for ${_agentByKey(agents, p.receivingAgent).name} on ${p.properties}`,
+              `Pending authorization for ${_agentByKey(agents, p.receivingAgent).name} on ${p.properties}`,
               m('.button.btn.btn-outline-danger.ml-auto',
                 {
                   onclick: (e) => {
@@ -200,7 +200,7 @@ const ReporterControl = {
                       .then(onsuccess)
                   }
                 },
-                'Rescind Proposal')))
+                'Cancel Authorization')))
 
       ]
     } else if (_hasProposal(record, publicKey, 'reporter')) {
