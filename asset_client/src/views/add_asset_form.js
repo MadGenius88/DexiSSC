@@ -68,7 +68,7 @@ const AddAssetForm = {
 
         layout.row([
           forms.textInput(setter('type'), 'Type'),
-          forms.textInput(setter('subtype'), 'Subtype', false)
+          forms.textInput(setter('subtype'), 'Subtype (You can add notes here if desired)', false)
         ]),
 
         forms.group('Weight (kg)', forms.field(setter('weight'), {
