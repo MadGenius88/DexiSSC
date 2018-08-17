@@ -68,7 +68,7 @@ const AddAssetForm = {
 
         layout.row([
           forms.textInput(setter('type'), 'Type'),
-          forms.textInput(setter('subtype'), 'Subtype', false)
+          forms.textInput(setter('subtype'), 'Subtype (You can add notes here if desired)', false)
         ]),
 
         forms.group('Weight (kg)', forms.field(setter('weight'), {
@@ -96,7 +96,7 @@ const AddAssetForm = {
         ]),
 
         m('.reporters.form-group',
-          m('label', 'Authorize Reporters'),
+          m('label', 'Authorize Reporters. Reporters can update the tracking info of an asset. Use the drop-down to the right to select what they can update.'),
           vnode.state.reporters.map((reporter, i) =>
             m('.row.mb-2',
               m('.col-sm-8',
