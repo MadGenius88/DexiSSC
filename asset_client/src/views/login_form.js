@@ -49,7 +49,7 @@ const LoginForm = {
       m('legend', 'Login User'),
       forms.textInput(setter('username'), 'Username'),
       forms.passwordInput(setter('password'), 'Password'),
-      m('.container.text-center',
+      m('.container.text-center.dexi-login-text',
         'Or you can ',
         m('a[href="/signup"]',
           { oncreate: m.route.link },
@@ -57,7 +57,7 @@ const LoginForm = {
       m('.form-group',
         m('.row.justify-content-end.align-items-end',
           m('col-2',
-            m('button.btn.btn-primary',
+            m('button.btn.btn-dexi',
               {'data-toggle': 'modal', 'data-target': '#modal'},
               'Login')))))
     ])

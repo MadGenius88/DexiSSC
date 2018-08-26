@@ -23,9 +23,9 @@ const m = require('mithril')
  */
 const Navbar = {
   view (vnode) {
-    return m('nav.navbar.navbar-expand-sm.navbar-dark.bg-dark.mb-5', [
+    return m('nav.navbar.navbar-expand-sm.navbar-secondary.mb-5', [
       m('a.navbar-brand[href="/"]', { oncreate: m.route.link }, 'DeXI DLT'),
-      m('button.navbar-toggler', {
+      m('button.navbar-toggler.navbar-dark.btn.btn-outline-secondary', {
         type: 'button',
         'data-toggle': 'collapse',
         'data-target': '#navbar',
@@ -44,7 +44,7 @@ const Navbar = {
 const links = items => {
   return m('ul.navbar-nav.mr-auto', items.map(([href, label]) => {
     return m('li.nav-item', [
-      m('a.nav-link', { href, oncreate: m.route.link }, label)
+      m('a.nav-link.text-secondary', { href, oncreate: m.route.link }, label)
     ])
   }))
 }
@@ -53,8 +53,8 @@ const links = items => {
  * Creates a single link for use in a navbar.
  */
 const link = (href, label) => {
-  return m('.navbar-nav', [
-    m('a.nav-link', { href, oncreate: m.route.link }, label)
+  return m('.navbar-nav.text-secondary', [
+    m('text.secondary.a.nav-link', { href, oncreate: m.route.link }, label)
   ])
 }
 
@@ -62,7 +62,7 @@ const link = (href, label) => {
  * Creates a navigation button styled for use in the navbar.
  */
 const button = (href, label) => {
-  return m('a.btn.btn-outline-primary.my-2.my-sm-0', {
+  return m('a.btn.btn-outline-secondary.my-2.my-sm-0', {
     href,
     oncreate: m.route.link
   }, label)

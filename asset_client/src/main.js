@@ -25,7 +25,6 @@ const m = require('mithril')
 const api = require('./services/api')
 const transactions = require('./services/transactions')
 const navigation = require('./components/navigation')
-
 const AddAssetForm = require('./views/add_asset_form')
 const AgentDetailPage = require('./views/agent_detail')
 const AgentList = require('./views/list_agents')
@@ -43,9 +42,11 @@ const Layout = {
   view (vnode) {
     return [
       vnode.attrs.navbar,
-      m('.content.container', vnode.children)
+      m('.content.container', vnode.children),
+
     ]
   }
+ 
 }
 
 const loggedInNav = () => {
@@ -128,6 +129,6 @@ document.addEventListener('DOMContentLoaded', () => {
     '/logout': { onmatch: logout },
     '/profile': { onmatch: profile },
     '/assets/:recordId/:name': resolve(PropertyDetailPage),
-    '/signup': resolve(SignupForm)
+    '/signup': resolve(SignupForm),
   })
 })
