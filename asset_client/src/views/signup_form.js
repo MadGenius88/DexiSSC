@@ -47,7 +47,7 @@ const passwordCard = state => {
   return forms.group('Password', [
     m('.card.text-center.border-warning',
       m('.card-header.text-white.bg-warning', m('em', m('strong', 'WARNING!'))),
-      m('.card-body.text-warning.bg-light',
+      m('.card-body.text-danger.bg-light',
         m('p.card-text',
           'This password will be used as a secret key to encrypt important ',
           'account information. Although it can be changed later, ',
@@ -89,7 +89,7 @@ const SignupForm = {
       forms.emailInput(setter('email'), 'Email'),
       forms.textInput(setter('username'), 'Username'),
       passwordCard(vnode.state),
-      m('.container.text-center',
+      m('.container.text-center.dexi-signup-text',
         'Or you can ',
         m('a[href="/login"]',
           { oncreate: m.route.link },
@@ -97,7 +97,7 @@ const SignupForm = {
       m('.form-group',
         m('.row.justify-content-end.align-items-end',
           m('col-2',
-            m('button.btn.btn-primary',
+            m('button.btn.btn-dexi',
               'Create User')))))
     ])
   }

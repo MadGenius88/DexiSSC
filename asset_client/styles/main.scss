@@ -1,8 +1,57 @@
 // Styling for Google Maps API
+$primary-color: rgb(18,32,58); 
+$secondary-color: rgb(196,89,17);
+$accent-color: rgb(255,192,0);
+$alt-color: rgb(189,215,238);
+
+
+
 #map-container {
   height: 400px;
   width: 100%;
 }
+
+.navbar{
+  background-color: $primary-color;
+}
+
+.navbar-brand {
+  color: $accent-color; 
+}
+
+.navbar-brand, a:hover {
+  color: $accent-color; 
+}
+
+.navbar-nav a:link {
+  color:$accent-color; 
+}
+
+
+// .nav-link a {
+//   color: $accent-color;
+// }
+
+// Style colors for the Dexi accent color you see on the page
+.h1-color {
+  color: $accent-color;
+}
+
+// Styling for dexi buttons 
+
+.btn-dexi {
+  background-color: $primary-color;
+  color: $accent-color; 
+}
+
+.dexi-login-text a { 
+  color: rgb(39, 156, 49);
+}
+
+.dexi-signup-text a {
+  color: rgb(39, 156, 49);
+}
+
 
 @import "~bootstrap/scss/bootstrap";
 @import "~octicons/build/octicons.min";
