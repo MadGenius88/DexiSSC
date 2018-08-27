@@ -13,7 +13,13 @@ please see its
 [sawtooth-core repo](https://github.com/hyperledger/sawtooth-core) or its
 [published docs](https://sawtooth.hyperledger.org/docs/).
 
-## Contents
+## Glossary
+### Agents
+Agents are entities that can send transactions affecting Records. This could include not only humans and companies that act as owners and custodians of objects being tracked, but also autonomous sensors sending transactions that update Records’ data. All Agents must be created (registered on-chain) before interacting with Records.
+### Proposals
+A Proposal is an offer from the owner or custodian of a Record to authorize another Agent as an owner, custodian, or reporter for that Record. Proposals are tagged as being for transfer of ownership, transfer of custodianship, or authorization of a reporter for some Properties. Proposals are also tagged as being open, accepted, rejected, or canceled. There cannot be more than one open Proposal for a specified role for each combination of Record, receiving Agent, and issuing Agent.
+
+### Contents
 
 - [Components](#components)
 - [Usage](#usage)
