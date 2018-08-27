@@ -1,9 +1,5 @@
 
-![Hyperledger Sawtooth](images/sawtooth_logo_light_blue-small.png)
-
-# Sawtooth Supply Chain
-
-This duplicate was made on 7/10/18 rm.
+![Hyperledger Sawtooth](images/dexiLogo.png)
 
 This is a distributed application to help you trace the provenance and other
 contextual information of any asset. It can be used as-is or customized for
